@@ -42,7 +42,7 @@ obtain your own keys. https://ambientweather.docs.apiary.io/#introduction/authen
 (aw/device-data query)
 </code></pre>
 
-###Realtime Data
+### Realtime Data
 
 Create a connected socket and add event listners
 
