@@ -7,7 +7,7 @@ Ambient Weather Client for Clojure
 ### Leiningen
 
 ```
-[ambient-weather-clj "0.1.0"]
+[org.clojars.rockchalkjay/ambient-weather-clj "0.1.0"]
 ```
 
 be sure to include clojars in your project.clj
@@ -24,14 +24,14 @@ obtain your own keys. https://ambientweather.docs.apiary.io/#introduction/authen
 
 #### List the user's devices
 
-<pre><code>(require '[ambient-weather-clj :as aw])
+<pre><code>(require '[ambient-weather-clj.core :as aw])
 
 (aw/user-devices "your-app-key" "your-api-key")
 </code></pre>
 
 #### Get historical device data
 
-<pre><code>(require '[ambient-weather-clj :as aw])
+<pre><code>(require '[ambient-weather-clj.core :as aw])
 
 (def query {:app-key "your-app-key"
             :api-key "your-api-key"
@@ -46,7 +46,7 @@ obtain your own keys. https://ambientweather.docs.apiary.io/#introduction/authen
 
 Create a connected socket and add event listners
 
-<pre><code>(require '[ambient-weather-clj :as aw])
+<pre><code>(require '[ambient-weather-clj.core :as aw])
 
 (def event-listners {:subscribed   (fn [& args]
                                      (println (apply str args)))
